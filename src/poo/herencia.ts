@@ -1,3 +1,11 @@
+export class vehiculo{
+   private _edad: number =0
+
+   get edad(){
+     return this._edad
+   }
+}
+
 export class Animal {
   constructor(protected name:string) {}
 
@@ -14,7 +22,7 @@ export class Animal {
   }
 }
 
-class Dog extends Animal {
+export class Dog extends Animal {
   owner: string
   constructor(name:string, owner:string){
     super(name)
